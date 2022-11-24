@@ -5,15 +5,15 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        "source": "/",
-        "has": [
-          {
-            "type": "host",
-            "value": "private.yamunamathiasheights.com"
-          }
-        ],
-        "destination": "https://yamunamathiasheights.com/private/"
-      }
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "private.yamunamathiasheights.com.com"
+        }
+      ],
+      "destination": "/private/:path*"
+    }
     ]
   },
 }
