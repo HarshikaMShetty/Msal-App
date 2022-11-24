@@ -12,7 +12,7 @@ const nextConfig = {
             "value": "private.yamunamathiasheights.com"
           }
         ],
-        "destination": "/yamunamathiasheights.com/private/"
+        "destination": "/https://www.yamunamathiasheights.com/private/"
       }
     ]
   },
