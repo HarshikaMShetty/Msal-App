@@ -5,14 +5,14 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        "source": "/:U*",
+        "source": "/:*",
         "has": [
           {
             "type": "host",
             "value": "private.yamunamathiasheights.com"
           }
         ],
-        "destination": "/yamunamathiasheights.com/private/*"
+        "destination": "/yamunamathiasheights.com/private/:*"
       }
     ]
   },
