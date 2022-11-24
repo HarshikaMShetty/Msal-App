@@ -5,7 +5,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        "source": "/*",
+        "source": "/:U*",
         "has": [
           {
             "type": "host",
