@@ -2,14 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  async rewrites() {
-	return [
-		{
-			source: 'https://private.yamunamathiasheights.com/',
-			destination: 'https://yamunamathiasheights.com/private',
-		},
-	]
-},
+  rewrites: [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "private.yamunamathiasheights.com"
+        }
+      ],
+      "destination": "https://yamunamathiasheights.com/private/:path*"
+    }
+  ]
 }
 
 module.exports = nextConfig
