@@ -1,0 +1,4 @@
+{
+  "redirects": [
+    { "source": "/private:path*", "destination": "https://private.yamunamathiasheights.com" }
+  ]
