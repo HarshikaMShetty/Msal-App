@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  rewrites: [
+  async rewrites() { 
+    retrun [
     {
       "source": "/:path*",
       "has": [
@@ -14,6 +15,7 @@ const nextConfig = {
       "destination": "https://yamunamathiasheights.com/private/:path*"
     }
   ]
+ }
 }
 
 module.exports = nextConfig
