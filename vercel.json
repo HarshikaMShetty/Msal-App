@@ -1,6 +1,6 @@
 {
   "redirects": [
-    { "source": "/private", "destination": "https://private.yamunamathiasheights.com" }
+    { "source": "https://private.yamunamathiasheights.com", "destination": "https://yamunamathiasheights.com/private" }
   ]
   
 }
